@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Utilization Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Check Worker Availability</h1>
+    <form action="/check-utilization" method="POST">
+      <label>Lead Phone Number (e.g., +1234567890):</label>
+      <input type="text" name="lead_phone_number" required>
+
+      <label>State (e.g., CA):</label>
+      <input type="text" name="state" required>
+
+      <label>ZIP Code:</label>
+      <input type="text" name="zip_code" required>
+
+      <input type="submit" value="Check Availability">
+    </form>
+  </div>
+</body>
+</html>
